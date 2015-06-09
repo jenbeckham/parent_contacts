@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  # before_action :logged_in?
   def login
     if request.post?
       teacher = Teacher.find_by_email(params[:email])
@@ -21,6 +22,6 @@ class SessionsController < ApplicationController
 
   def logout
     session[:teacher_id] = nil
-    redirect_to logout_sessions_path, notice: "Successfully logged out."
+    redirect_to sessions_logout_path, notice: "Successfully logged out."
   end
 end
