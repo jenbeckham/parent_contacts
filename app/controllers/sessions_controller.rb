@@ -20,5 +20,7 @@ class SessionsController < ApplicationController
   end
 
   def logout
+    session[:teacher_id] = nil
+    redirect_to logout_sessions_path, notice: "Successfully logged out."
   end
 end

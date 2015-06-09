@@ -7,8 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+  <%= link_to "Logout", logout_sessions_path if session[:user_id] %>
+  <p id="notice"><%= notice %></p>
+  <%= yield %>
 
 </body>
 </html>
