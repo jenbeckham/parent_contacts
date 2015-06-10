@@ -2,12 +2,9 @@
 
 best:
   email: "bestteacher@gmail.com"
-  password: "bestteacher1"
 
 ok:
   email: "okteacher@gmail.com"
-  password: "okteacher1"
 
 worst:
   email: "worstteacher@gmail.com"
-  password: "worstteacher1"

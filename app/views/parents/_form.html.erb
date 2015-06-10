@@ -12,6 +12,9 @@
   <% end %>
 
   <div class="field">
+   <%= f.hidden_field :teacher_id %>
+ </div>
+  <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
@@ -22,10 +25,6 @@
   <div class="field">
     <%= f.label :email %><br>
     <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :teacher_id %><br>
-    <%= f.number_field :teacher_id %>
   </div>
   <div class="actions">
     <%= f.submit %>
