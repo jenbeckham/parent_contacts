@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   post 'sessions/login'
 
   get 'sessions/logout'
+  post 'sessions/logout'
 
   resources :parents
 
