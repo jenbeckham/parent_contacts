@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get 'teachers/edit'
-
   patch 'teachers/update'
   put 'teachers/update'
 

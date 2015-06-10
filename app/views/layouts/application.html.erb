@@ -5,10 +5,17 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <ul class="nav nav-tabs">
+  <li role="presentation"><%= link_to "Home", parents_path if session[:teacher_id] %> </li>
+  <li role="presentation"><%= link_to "Update Profile", teachers_edit_path if session[:teacher_id] %></li>
+  <li role="presentation"><%= link_to "Logout", sessions_logout_path if session[:teacher_id] %></li>
+</ul>
 </head>
+
+
 <body>
-  <%= link_to "Logout", sessions_logout_path if session[:teacher_id] %>
-  <%= link_to "Update Account", teachers_edit_path if session[:teacher_id] %>
+  <h1>Welcome <%= session[:teacher_name] if session[:teacher_id] %></h1>
   <p id="notice"><%= notice %></p>
 
   <%= yield %>
