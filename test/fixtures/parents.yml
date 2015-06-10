@@ -4,34 +4,34 @@ one:
   name: "Bob Jones"
   student_name: "Bobby Jones Jr"
   email: "bob@gmail.com"
-  teacher_id: 1
+  teacher: :best
 
 two:
   name: "Sue Star"
   student_name: "Tommy Star"
   email: "star@gmail.com"
-  teacher_id: 1
+  teacher: :best
 
 three:
   name: "Joe James"
   student_name: "Connie James"
   email: "jjames@gmail.com"
-  teacher_id: 1
+  teacher: :best
 
 four:
   name: "Sally Hansen"
   student_name: "Minnie Hansen"
   email: "shansen@gmail.com"
-  teacher_id: 2
+  teacher: :ok
 
 fifth:
   name: "Becky Anderson"
   student_name: "Jordon Anderson"
   email: "banderson@gmail.com"
-  teacher_id: 2
+  teacher: :ok
 
 sixth:
   name: "Harry Harris"
   student_name: "Henry Harris"
   email: "hharris@gmail.com"
-  teacher_id: 3
+  teacher: :worst

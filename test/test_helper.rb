@@ -8,4 +8,7 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  def login!
+    session[:teacher_id] = teachers(:best).id
+  end
 end

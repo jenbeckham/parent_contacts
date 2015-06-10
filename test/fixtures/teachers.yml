@@ -1,10 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 best:
+  name: "Bill"
   email: "bestteacher@gmail.com"
+  password_digest: "bestteacher1"
 
 ok:
+  name: "Dan"
   email: "okteacher@gmail.com"
+  password_digest: "okteacher1"
 
 worst:
+  name: "Matt"
   email: "worstteacher@gmail.com"
+  password_digest: "worstteacher1"

@@ -8,7 +8,9 @@
 </head>
 <body>
   <%= link_to "Logout", sessions_logout_path if session[:teacher_id] %>
+  <%= link_to "Update Account", teachers_edit_path if session[:teacher_id] %>
   <p id="notice"><%= notice %></p>
+
   <%= yield %>
 
 </body>
