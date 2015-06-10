@@ -5,8 +5,8 @@ class ParentsController < ApplicationController
   # GET /parents
   # GET /parents.json
   def index
-    # @parents = Parent.where(teacher_id: session[:teacher_id]).all
-    @parents = Parent.assign_teacher(session[:teacher_id])
+    @parents = Parent.where(teacher_id: session[:teacher_id]).all
+    # @parents = Parent.assign_teacher(session[:teacher_id])
   end
 
   # GET /parents/1
